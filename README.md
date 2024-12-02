@@ -81,25 +81,25 @@ The import of data is done from an already existing MySQL file. This file has to
  - Analysis of different SQL statement on data base
      
   
-/* 1. Find Total Number Of Cusomer */
-select * from customers;
+1. Find Total Number Of Cusomer 
+   `select * from customers;`
 
-/* 2. Check How Many Total Records in Transactions Table */
-select count(*) as Total_Records from transactions;
-
-
-/* 3. Check How Many total Records in Customers Table */
-select count(*) as Total_Customers from customers;
+2. Check How Many Total Records in Transactions Table
+   `select count(*) as Total_Records from transactions;`
 
 
-/* 4. Check All The Transaction Where The Transaction Market Code is Mar001 */
-select * from transactions
-where market_code = 'Mark001';
+3. Check How Many total Records in Customers Table 
+   `select count(*) as Total_Customers from customers;`
 
 
-/* 5. Find Distinct Product sale in chenni */
-select distinct product_code from transactions
-where market_code = 'Mark001';
+4. Check All The Transaction Where The Transaction Market Code is Mar001
+   `select * from transactions`
+   `where market_code = 'Mark001';`
+
+
+5. Find Distinct Product sale in chenni
+   `select distinct product_code from transactions
+    where market_code = 'Mark001';`
 
 
 /* 6. How Many Transation we did in Chennai */
