@@ -218,16 +218,16 @@ Shows visualizations from Sales insights :
 
 | Key Insights |
 | ----------- |
-||
+|![image](https://github.com/user-attachments/assets/be28b3ea-5692-4751-a546-f112f3226201)|
 
 
 | Profit Analysis |
 | ----------- |
-||
+|![image](https://github.com/user-attachments/assets/466e52f3-bbad-4748-83d6-35264b1f6c16)|
 
 | Profit Analysis |
 | ----------- |
-||
+|![image](https://github.com/user-attachments/assets/92658e14-72f0-4a3a-b2f0-4f2c9c1315c2)|
 
 ## Tools, Software and Libraries :
 
