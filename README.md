@@ -126,7 +126,6 @@ The import of data is done from an already existing MySQL file. This file has to
    `select * from transactions`<br>
    `where currency = 'USD';`
 
-
 9. Total Sales or revenue in 2019
     
    `select sum(transactions.sales_amount) as Total_Sale from transactions`<br>
