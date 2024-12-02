@@ -121,7 +121,7 @@ The import of data is done from an already existing MySQL file. This file has to
    `Inner join date on transactions.order_date = date.date`<br>
    `where date.year = 2020;`
 
-8.To find transactions where currency is US dollars
+ 8.To find transactions where currency is US dollars
 
    `select * from transactions`<br>
    `where currency = 'USD';`
@@ -136,28 +136,28 @@ The import of data is done from an already existing MySQL file. This file has to
 
 10. How Much Business Did in mumbai
     
-   `select sum(transactions.sales_amount) as Total_sale from transactions`<br>
-   `Inner join date on transactions.order_date = date.date`<br>
-   `where date.year = 2020 and transactions.market_code = 'mark002';`
+     `select sum(transactions.sales_amount) as Total_sale from transactions`<br>
+     `Inner join date on transactions.order_date = date.date`<br>
+     `where date.year = 2020 and transactions.market_code = 'mark002';`
 
 
 11. Which city recorded the highest number of transactions
     
-   `select markets_name, count(sales_amount) as transaction_count from transactions`<br>
-   `join markets on transactions.sales_amount = markets.markets_name`<br>
-   `group by markets_name`<br>
-   `order by transaction_count desc`<br>
-   `limit 1;`
+     `select markets_name, count(sales_amount) as transaction_count from transactions`<br>
+     `join markets on transactions.sales_amount = markets.markets_name`<br>
+     `group by markets_name`<br>
+     `order by transaction_count desc`<br>
+     `limit 1;`
 
 
 12. What is the trend in monthly sales over the past year 2019
     
-   `select month_name, sum(sales_amount) as Higest_Sale from transactions`<br>
-   `join date on transactions.sales_amount = date.year`<br>
-   `where year = 2019`<br>
-   `group by month_name`<br>
-   `order by month_name desc`<br>
-   `limit 1;`
+     `select month_name, sum(sales_amount) as Higest_Sale from transactions`<br>
+     `join date on transactions.sales_amount = date.year`<br>
+     `where year = 2019`<br>
+     `group by month_name`<br>
+     `order by month_name desc`<br>
+     `limit 1;`
 
 Similarly, if we want different of any other particular city the market code of that city is used on the mysql workbench.
 
