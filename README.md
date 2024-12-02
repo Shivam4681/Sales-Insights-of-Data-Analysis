@@ -87,76 +87,76 @@ The import of data is done from an already existing MySQL file. This file has to
    
    `select * from customers;`
 
-3. Check How Many Total Records in Transactions Table
+2. Check How Many Total Records in Transactions Table
    
    `select count(*) as Total_Records from transactions;`
 
 
-5. Check How Many total Records in Customers Table
+3. Check How Many total Records in Customers Table
    
    `select count(*) as Total_Customers from customers;`
 
 
-7. Check All The Transaction Where The Transaction Market Code is Mar001
+4. Check All The Transaction Where The Transaction Market Code is Mar001
    
-   `select * from transactions`/n
+   `select * from transactions`<br>
    `where market_code = 'Mark001';`
 
 
-9. Find Distinct Product sale in chenni
+5. Find Distinct Product sale in chenni
     
-   `select distinct product_code from transactions
+   `select distinct product_code from transactions<br>
     where market_code = 'Mark001';`
 
 
-11. How Many Transation we did in Chennai
+6. How Many Transation we did in Chennai
     
-   `select count(markets_name) from markets`
+   `select count(markets_name) from markets`<br>
    `where markets_name = 'Chennai';`
 
 
-13. Show the Transaction date 2022
+7. Show the Transaction date 2022
     
-   `select transactions.*, date.* from transactions`
-   `Inner join date on transactions.order_date = date.date`
+   `select transactions.*, date.* from transactions`<br>
+   `Inner join date on transactions.order_date = date.date`<br>
    `where date.year = 2020;`
 
 8.To find transactions where currency is US dollars
 
-   `select * from transactions`
+   `select * from transactions`<br>
    `where currency = 'USD';`
 
 
 9. Total Sales or revenue in 2019
     
-   `select sum(transactions.sales_amount) as Total_Sale from transactions`
-   `Inner join date on transactions.order_date = date.date`
+   `select sum(transactions.sales_amount) as Total_Sale from transactions`<br>
+   `Inner join date on transactions.order_date = date.date`<br>
    `where date.year = 2019;`
 
 
-11. How Much Business Did in mumbai
+10. How Much Business Did in mumbai
     
-   `select sum(transactions.sales_amount) as Total_sale from transactions`
-   `Inner join date on transactions.order_date = date.date`
+   `select sum(transactions.sales_amount) as Total_sale from transactions`<br>
+   `Inner join date on transactions.order_date = date.date`<br>
    `where date.year = 2020 and transactions.market_code = 'mark002';`
 
 
-13. Which city recorded the highest number of transactions
+11. Which city recorded the highest number of transactions
     
-   `select markets_name, count(sales_amount) as transaction_count from transactions`
-   `join markets on transactions.sales_amount = markets.markets_name`
-   `group by markets_name`
-   `order by transaction_count desc`
+   `select markets_name, count(sales_amount) as transaction_count from transactions`<br>
+   `join markets on transactions.sales_amount = markets.markets_name`<br>
+   `group by markets_name`<br>
+   `order by transaction_count desc`<br>
    `limit 1;`
 
 
-15. What is the trend in monthly sales over the past year 2019
+12. What is the trend in monthly sales over the past year 2019
     
-   `select month_name, sum(sales_amount) as Higest_Sale from transactions`
-   `join date on transactions.sales_amount = date.year`
-   `where year = 2019`
-   `group by month_name`
-   `order by month_name desc`
+   `select month_name, sum(sales_amount) as Higest_Sale from transactions`<br>
+   `join date on transactions.sales_amount = date.year`<br>
+   `where year = 2019`<br>
+   `group by month_name`<br>
+   `order by month_name desc`<br>
    `limit 1;`
 
 Similarly, if we want different of any other particular city the market code of that city is used on the mysql workbench.
