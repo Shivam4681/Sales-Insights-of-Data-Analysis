@@ -77,6 +77,8 @@ The import of data is done from an already existing MySQL file. This file has to
    And then we can check that transacation table we can see that ceratin negative value in amount which is not possible. and we can see that certain transactions are in USD. Hence, filtration of that is also needed by converting into INR.
      
      `SELECT * FROM sales.transactions;`
+
+  
      
  - Analysis of different SQL statement on data base
      
@@ -97,7 +99,7 @@ The import of data is done from an already existing MySQL file. This file has to
 
 7. Check All The Transaction Where The Transaction Market Code is Mar001
    
-   `select * from transactions`
+   `select * from transactions`/n
    `where market_code = 'Mark001';`
 
 
@@ -184,22 +186,6 @@ In power query editore finding the total values having USD as currency.
  
  using this correct formula of the conversion,and converted the USD currency into INR.
  
- In MySQL Workbench find that there are duplicates of USD and INR
- 
-     `SELECT count(*) from sales.transactions where sales.transactions.currency="INR\r";` 
-     150000 - can't removed as it is large amount
-
-     `SELECT count(*) from sales.transactions where sales.transactions.currency="INR";` 
-     279 - we can remove it as it is small record and can be considered as bad data
-
-     `SELECT count(*) from sales.transactions where sales.transactions.currency="USD\r";` 
- 
-     `SELECT count(*) from sales.transactions where sales.transactions.currency="USD";`
-
-     `SELECT * from sales.transactions where sales.transactions.currency='USD\r' or sales.transactions.currency='USD';`
-
-we can see that it is duplicate and for analysis its better to delete anyone of them so lets delete USD and keep USD/r. finally we will keep data with INR/r and USD/r-
-
 ## Data Modeling:
 
 And then dataset was cleaned and transformed, it was ready to the data modeled.
