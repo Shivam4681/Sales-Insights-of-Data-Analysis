@@ -121,7 +121,7 @@ The import of data is done from an already existing MySQL file. This file has to
    `Inner join date on transactions.order_date = date.date`<br>
    `where date.year = 2020;`
 
- 8.To find transactions where currency is US dollars
+ 8. To find transactions where currency is US dollars
 
    `select * from transactions`<br>
    `where currency = 'USD';`
