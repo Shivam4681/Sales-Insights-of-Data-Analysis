@@ -123,8 +123,8 @@ The import of data is done from an already existing MySQL file. This file has to
 
  8. To find transactions where currency is US dollars
 
-   `select * from transactions`<br>
-   `where currency = 'USD';`
+     `select * from transactions`<br>
+     `where currency = 'USD';`
 
 9. Total Sales or revenue in 2019
     
