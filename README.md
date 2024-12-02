@@ -81,7 +81,7 @@ The import of data is done from an already existing MySQL file. This file has to
  - Analysis of different SQL statement on data base
      
   
-1. Find Total Number Of Cusomer/N
+1. Find Total Number Of Cusomer\N
    `select * from customers;`
 
 2. Check How Many Total Records in Transactions Table
